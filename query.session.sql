@@ -1,0 +1,9 @@
+SELECT * FROM users;
+
+SELECT * FROM contacts;
+
+SELECT * FROM addresses;
+
+SHOW DATABASES;
+
+SHOW TABLES;

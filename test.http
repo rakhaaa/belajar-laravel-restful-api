@@ -1,0 +1,46 @@
+POST http://localhost:8000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Newton",
+    "password": "rahasia",
+    "name": "Isacc Newton"
+}
+
+###
+POST http://localhost:8000/api/users/login HTTP/1.1
+Content-Type: : application/json
+
+{
+    "username": "Newton",
+    "password": "rahasia"
+}
+
+###
+GET http://localhost:8000/api/users/current HTTP/1.1
+Content-Type: : application/json
+Authorization: 539fcd78-2f27-4763-b284-eb3f71eb12b5
+
+###
+PATCH http://localhost:8000/api/users/current HTTP/1.1
+Content-Type: : application/json
+Authorization: 539fcd78-2f27-4763-b284-eb3f71eb12b5
+
+{
+    "name": "Sir Isacc Newton"
+}
+
+###
+PATCH http://localhost:8000/api/users/current HTTP/1.1
+Content-Type: : application/json
+Authorization: 539fcd78-2f27-4763-b284-eb3f71eb12b5
+
+{
+    "password": "rahasia"
+}
+
+###
+DELETE http://localhost:8000/api/users/logout HTTP/1.1
+Content-Type: : application/json
+Authorization: 539fcd78-2f27-4763-b284-eb3f71eb12b5
+
